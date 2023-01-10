@@ -5,3 +5,29 @@
 // 82 -> 10
 
 // 9012 -> 12
+
+int SumDigitsNumber(int number)
+{
+
+    int sum = 0; // Переменная для записи ответа
+
+    int temp = 0; // Вспомогательная временная переменная
+
+    do
+    {
+        temp = number % 10; // запускаю цик do для определения цифр номера
+        sum += temp; // операция сложения
+        number = number / 10; // вычитаю цифру из номера для определения следующий начиная с конца
+    }
+
+    while (number > 0); // если number становится равен 0 то цикл останавливается пройдя все цифры номера и выводит результат
+
+    return sum;
+
+}
+
+Console.WriteLine("Введите число N");
+
+int n = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"Сумма цифр числа {n} равна {SumDigitsNumber(n)}");
