@@ -1,9 +1,6 @@
 ﻿// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе. Через строку решать нельзя.
-
 // 452 -> 11
-
 // 82 -> 10
-
 // 9012 -> 12
 
 int SumDigitsNumber(int number)
@@ -25,6 +22,8 @@ int SumDigitsNumber(int number)
     return sum;
 
 }
+
+Console.Clear();
 
 Console.WriteLine("Введите число N");
 

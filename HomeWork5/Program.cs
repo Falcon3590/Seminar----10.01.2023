@@ -27,7 +27,6 @@ double middle = array.Average();
 
 // 5. Найти медианное значение первоначалального массива.
 var mediana = Mediana(array);
-mediana = Convert.ToDouble(mediana);
 // Console.WriteLine($"Медианное значение массива = {mediana}");
 
 // 4. Сохранить эту инфу в отдельный массив и вывести на экран с пояснениями. 
